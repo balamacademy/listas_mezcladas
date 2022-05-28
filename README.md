@@ -1,28 +1,34 @@
-# ADN Culpable
+# Listas mezcladas
 
-Debido a la gran cantidad de crímenes y casos sin resolver, la policía local ha decidido implementar su propio sistema de reconocimiento de sospechosos con la técnica basada en el uso del DNA.
+Desarrolle un programa que sea capaz de realizar las siguientes operaciones, considerando tres listas A, B y C de diferente cantidad de elementos cada una.
 
-Para esto la policía mantiene dos listas de información; la primera contiene el nombre de las personas registradas en la región (nombre y apellido), la otra, un cromosoma representativo del DNA de cada una de esas personas.
+Ingrese los valores de cada lista.
+Ordene ascendentemente A, B y C
+Mezcle ordenadamente los elementos de A, B y C en una lista D, el cual no debe tener elementos repetidos.
 
-Por simplicidad, un cromosoma se considera como una cadena de 0 (ceros) y 1 (unos), de largo 20.
-
-El método para determinar el sospechoso, es el siguiente:
-
-- Se obtiene una muestra del cromosoma del autor del delito (20 caracteres)
-- Se busca en la lista de cromosomas, aquel cromosoma que es más parecido a la muestra. El más parecido se define como el cromosoma que tiene más genes (caracteres) iguales a la muestra.
-- Al terminar la búsqueda, se muestra el nombre de la persona cuyo cromosoma es sospechoso, con el porcentaje de parentesco.
-- La informacíon inicial del programa se debe ingresar directamente en el código, es decir, nombres y cromosomas, en cambio la secuencia encontrda en la escena del crimen, debe ser ingresada por el usuario.
-
-Desarrolle un programa que lleve a cabo la búsqueda descrita a partir de una muestra de entrada.
-
-Recuerde que como se trata de dos listas, la información del nombre como la de los cromosomas, deben estar en la misma posición en ambas listas.
-
-Consideremos, personas como \[Pedro, Juan, Diego\]. Sus secuencias serán
-
-- \[00000101010101010101, 00101010101101110111, 00100010010000001001\]
-
-Ejemplo:
 ```
-Ingrese secuencia: 01010101000011001100
-El culpable es Pedro con un parentezco de 60%
+Ingrese valores de A, termine con 0:
+2
+4
+1
+0
+
+Ingrese valores de B, termine con 0:
+2
+8
+11
+6
+0
+
+Ingrese valores de C, termine con 0:
+5
+11
+9
+1
+0
+
+A ordenado: 1 2 4
+B ordenado: 2 6 8 11
+C ordenado: 1 5 9 11
+C: 1 2 4 5 6 8 9 11
 ```
